@@ -1,0 +1,107 @@
+// Colors
+$petal-color: #e6377a;
+$stem-color: #018b01;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .title {
+    margin-bottom: 40px;
+  }
+}
+
+.flower-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .petals {
+    .left {
+      background-color: $petal-color;
+    }
+
+    .right {
+      background-color: darken($petal-color, 10%);
+    }
+
+    .upper-petals {
+      display: flex;
+
+      .left {
+        width: 100px;
+        height: 75px;
+        border-top-right-radius: 50%;
+      }
+
+      .right {
+        width: 100px;
+        height: 75px;
+        border-top-left-radius: 50%;
+      }
+    }
+
+    .bottom-petals {
+      display: flex;
+
+      .left {
+        width: 100px;
+        height: 75px;
+        border-bottom-left-radius: 50%;
+      }
+
+      .right {
+        width: 100px;
+        height: 75px;
+        border-bottom-right-radius: 50%;
+      }
+    }
+  }
+
+  .stem {
+    position: relative;
+    width: 10px;
+    height: 300px;
+    background-color: $stem-color;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    .leaf {
+      position: absolute;
+      background-color: darken($stem-color, 8%);
+      width: 50px;
+      height: 50px;
+    }
+
+    .right {
+      position: absolute;
+      top: 60px;
+      left: 17px;
+      border-top-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      transform: rotateZ(20deg);
+    }
+
+    .left {
+      position: absolute;
+      bottom: 60px;
+      right: 17px;
+      border-top-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      transform: rotateZ(-20deg);
+    }
+  }
+}

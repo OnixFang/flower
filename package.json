@@ -1,0 +1,29 @@
+{
+  "name": "flower",
+  "version": "1.0.0",
+  "description": "A flower for my wife.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "OnixFang",
+  "license": "ISC",
+  "keywords": [
+    "Love",
+    "Wife",
+    "Woman's day"
+  ],
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.1.1",
+    "html-loader": "^2.1.1",
+    "html-webpack-plugin": "^5.3.0",
+    "mini-css-extract-plugin": "^1.3.9",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
+}
