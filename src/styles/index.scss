@@ -1,3 +1,6 @@
+// Google fonts
+@import url("https://fonts.googleapis.com/css2?family=Srisakdi:wght@700&display=swap");
+
 // Colors
 $petal-color: #e6377a;
 $stem-color: #018b01;
@@ -5,10 +8,16 @@ $stem-color: #018b01;
 * {
   margin: 0;
   padding: 0;
+
+  font-family: Srisakdi, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  color: #fff;
 }
 
 body {
   height: 100vh;
+  background-color: #e69dce;
 }
 
 .container {
