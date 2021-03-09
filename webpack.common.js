@@ -38,6 +38,6 @@ module.exports = {
     filename: 'assets/[name].js',
     chunkFilename: '[id].css',
     path: path.resolve(__dirname, 'docs'),
-    publicPath: '/',
+    publicPath: '/flower',
   },
 };
