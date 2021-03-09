@@ -37,7 +37,7 @@ module.exports = {
   output: {
     filename: 'assets/[name].js',
     chunkFilename: '[id].css',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     publicPath: '/',
   },
 };
